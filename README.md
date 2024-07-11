@@ -15,7 +15,7 @@ All configurations will be saved in the `dmc3se.ini` file.
 - https://www.youtube.com/watch?v=mmBH1-KXRXI
 
 # XInput/Xbox Controller Fix:
-You can do this procedure even without the Style Switcher mod but if you're gonna use XInput Plus with the mod, install Style Switcher first before doing this procedure.
+You can do this procedure even without the Style Switcher mod but if you're gonna use XInput Plus with the mod, install Style Switcher first before doing this procedure. Note: This method does not work for Style Switcher v3.0.0/Starter Pack as it will cause the game to crash.
 - Download [XInput Plus](https://0dd14lab.net/bin/xinputplus/).
 - Run XInput Plus, click Select on `Target Program` and select `dmc3se.exe`.
 - Go to the `DirectInput` tab and tick the `Enable DirectInput Output`.
