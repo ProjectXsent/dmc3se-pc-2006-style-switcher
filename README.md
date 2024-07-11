@@ -1,5 +1,5 @@
 # Requirements:
-- Devil May Cry 3: Special Edition [v1.3](https://community.pcgamingwiki.com/files/file/2832-devil-may-cry-3-special-edition-v130-jpn-update/)
+- Devil May Cry 3 Special Edition [v1.3](https://community.pcgamingwiki.com/files/file/2832-devil-may-cry-3-special-edition-v130-jpn-update/)
 - DirectX End-User Runtimes (June 2010) [Offline Installler](https://www.techpowerup.com/download/directx-redistributable-runtime/) / [Web Installer](https://www.microsoft.com/en-us/download/details.aspx?id=35)
 - Visual C++ Redistributable 2015-2022 [x86](https://aka.ms/vs/17/release/vc_redist.x86.exe) and [x64 (Optional)](https://aka.ms/vs/17/release/vc_redist.x64.exe) / [All-in-One](https://www.majorgeeks.com/files/details/visual_c_runtime_installer.html)
 
@@ -8,6 +8,7 @@
 - Download and extract the Style Switcher mod and follow the readme txt files.
 
 # Controller Configuration
+All configurations will be saved in the `dmc3se.ini` file.
 - Run `GPadCfg.exe` then assign the keys and double-click the `Save` icon. If the analogs are swapped in-game, open `GPadCfg.exe` again then click the `Reverse` icon and Save.
 
 # Video tutorial for Generic Controllers
