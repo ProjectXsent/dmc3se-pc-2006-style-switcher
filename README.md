@@ -11,7 +11,7 @@
 - Run `GPadCfg.exe` then assign the keys and double-click the `Save` icon. If the analogs are swapped in-game, open `GPadCfg.exe` again then click the `Reverse` icon and Save.
 
 # Video tutorial for Generic Controllers
-- https://github.com/muhopensores/dmc3-inputs-thing
+- https://www.youtube.com/watch?v=mmBH1-KXRXI
 
 # XInput/Xbox Controller Fix:
 You can do this procedure even without the Style Switcher mod but if you're gonna use XInput Plus with the mod, install Style Switcher first before doing this procedure.
