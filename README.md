@@ -1,3 +1,5 @@
+Archive of Serpentiem's Style Switcher mod for DMC3SE 2006 PC port.
+
 # Requirements:
 - Devil May Cry 3 Special Edition [v1.3](https://community.pcgamingwiki.com/files/file/2832-devil-may-cry-3-special-edition-v130-jpn-update/)
 - DirectX End-User Runtimes (June 2010) [Offline Installler](https://www.techpowerup.com/download/directx-redistributable-runtime/) / [Web Installer](https://www.microsoft.com/en-us/download/details.aspx?id=35)
@@ -5,7 +7,7 @@
 
 # Instructions:
 - Install the required files and restart your PC.
-- Download and extract the Style Switcher mod and follow the readme txt files.
+- Download and extract the Style Switcher mod to the DMC3SE game folder and follow the readme txt files.
 
 # Controller Configuration
 All configurations will be saved in the `dmc3se.ini` file.
@@ -15,7 +17,7 @@ All configurations will be saved in the `dmc3se.ini` file.
 - https://www.youtube.com/watch?v=mmBH1-KXRXI
 
 # XInput/Xbox Controller Fix:
-You can do this procedure even without the Style Switcher mod but if you're gonna use XInput Plus with the mod, install Style Switcher first before doing this procedure.
+You can do this procedure with or without the Style Switcher mod.
 - Download [XInput Plus](https://0dd14lab.net/bin/xinputplus/) and extract the files into a folder.
 - Run XInput Plus, click Select on `Target Program` and select `dmc3se.exe`.
 - Go to the `DirectInput` tab and tick the `Enable DirectInput Output`.
