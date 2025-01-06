@@ -27,7 +27,7 @@ Installation
 2. Extract the files from the archives and run "install.bat".
 
 NOTE:
-- If you find Shoot/X, Melee/Y, and Taunt/Back buttons (also for keyboard) not working, restart your computer and launch the game.
+- If you find Shoot/X/Square, Melee/Y/Triangle, and Taunt/Back/Select/Share buttons (also for keyboard) not working, sign out/restart your computer and launch the game.
 
 --------------
 Uninstallation
@@ -35,9 +35,9 @@ Uninstallation
 
 1. Run "uninstall.bat".
 
-------------------------
+------------------------------------
 XInput/Xbox Controller configuration
-------------------------
+------------------------------------
 No need to use the EnableXInput and JOYPAD feature from Style Switcher v2.4.3 since you can use XInput Plus.
 
 1. Download, extract, and run XInput Plus (https://0dd14lab.net/bin/xinputplus/) as Administrator.
@@ -69,9 +69,9 @@ L<->R = 1
 
 The name varies on different Xbox Controllers especially the Xbox Wireless Controllers so it is best to run (Win + R) "joy.cpl" to get the controller name and replace it in the bracket or run GPadCfg and assign the keys.
 
-------------------------
+----------------------------
 PS4 Controller configuration
-------------------------
+----------------------------
 If you use a PlayStation 4 controller with DS4Windows in Default/Xbox 360 gamepad profile, you need to install HidHide then add DS4Windows in HidHide's Application tab and "hide" your main PS4 controller there.
 Since the program emulates an Xbox Controller, edit DMC3SE.ini with Notepad and use Xbox 360 config from above.
 
@@ -113,12 +113,3 @@ Width=1920
 Height=1080
 FOV=0.5
 Fullscreen=0
-
-------------
-
-These affect the graphical effects, such as fog (M8), lighting and blur. If you have lighting turned on, the bosses in M18 will be colored the same as the background making them hard to see:
-
-DisableFogOverlay=1
-ForceDynamicLighting=0
-DisableBlurOverlay=1
-
