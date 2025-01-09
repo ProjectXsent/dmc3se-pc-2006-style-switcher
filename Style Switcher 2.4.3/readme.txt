@@ -67,6 +67,21 @@ L3 = 8
 R3 = 9
 L<->R = 1
 
+[Controller (XBOX One For Windows)]
+START = 7
+SELECT = 6
+CIRCLE = 1
+TRIANGLE = 3
+SQUARE = 2
+CROSS = 0
+L1 = 4
+R1 = 5
+L2 = 10
+R2 = 11
+L3 = 8
+R3 = 9
+L<->R = 1
+
 The name varies on different Xbox Controllers especially the Xbox Wireless Controllers so it is best to run (Win + R) "joy.cpl" to get the controller name and replace it in the bracket or run GPadCfg and assign the keys.
 
 ------------------------
