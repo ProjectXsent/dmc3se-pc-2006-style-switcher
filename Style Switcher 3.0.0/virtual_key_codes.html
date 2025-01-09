@@ -1,0 +1,791 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Virtual Key Codes</title>
+</head>
+
+<body>
+<p align="center"><font size="5" face="Arial"><b>
+Virtual Key Codes&nbsp;</b></font>
+<p align="center"><font size="4" face="Arial"><b> for US English-language
+keyboard</b></font></p>
+<p><i><font face="Arial">The following description is taken from &quot; Windows
+API Guide &quot; copyright � 2001 Paul Kuliniewicz</font></i></p>
+<p><font face="Arial">The <b>virtual-key codes</b> identify various virtual keys.
+Virtual keys mainly consist of actual keyboard keys, but also include &quot;virtual&quot;
+elements such as the three mouse buttons. The virtual keys also include many
+&quot;keys&quot; which usually do not exist at all. A key's virtual-key code
+does not change when modifier keys (Ctrl, Alt, Shift, etc.) are held -- e.g.,
+the 1 key has the same virtual-key code whether 1 or ! is pressed. However, the
+numbers in the numeric keypad on the keyboard do have two different virtual-key
+codes: one for when Num Lock is on, and another for when Num Lock is off. Note
+that the virtual-key codes of 0-9 and A-Z equal their ASCII codes.</font></p>
+<p><font face="Arial"><b>Note:</b> The actual meanings of some of the key codes
+may vary on keyboards designed for different languages. Most notably, the VK_OEM_*
+that denote punctuation keys may vary between languages, relating to a different
+punctuation key. The meanings listed below are for a U.S. English-language
+keyboard.</font></p>
+<p>&nbsp;</p>
+
+<table width="742">
+  <col width="132" style="mso-width-source:userset;mso-width-alt:4827;width:99pt">
+  <col width="56" style="mso-width-source:userset;mso-width-alt:2048;width:42pt">
+  <col width="356" style="mso-width-source:userset;mso-width-alt:13019;width:267pt">
+  <tr height="17" style="height:12.75pt">
+    <td height="17" width="152" style="height: 12.75pt"><font face="Arial">VK_LBUTTON</font></td>
+    <td width="56"><font face="Arial">0x01</font></td>
+    <td class="xl22" width="514"><font face="Arial">The left mouse button</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_RBUTTON</font></td>
+    <td width="56"><font face="Arial">0x02</font></td>
+    <td class="xl22" width="514"><font face="Arial">The right mouse button</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_CANCEL</font></td>
+    <td width="56"><font face="Arial">0x03</font></td>
+    <td class="xl22" width="514"><font face="Arial">The Cancel virtual key, used for control-break processing</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_MBUTTON</font></td>
+    <td width="56"><font face="Arial">0x04</font></td>
+    <td class="xl22" width="514"><font face="Arial">The middle mouse button</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_BACK</font></td>
+    <td width="56"><font face="Arial">0x08</font></td>
+    <td class="xl22" width="514"><font face="Arial">Backspace</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_TAB</font></td>
+    <td width="56"><font face="Arial">0x09</font></td>
+    <td class="xl22" width="514"><font face="Arial">Tab</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_CLEAR</font></td>
+    <td width="56"><font face="Arial">0x0C</font></td>
+    <td class="xl22" width="514"><font face="Arial">5 (keypad without Num Lock)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_RETURN</font></td>
+    <td width="56"><font face="Arial">0x0D</font></td>
+    <td class="xl22" width="514"><font face="Arial">Enter</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_SHIFT</font></td>
+    <td width="56"><font face="Arial">0x10</font></td>
+    <td class="xl22" width="514"><font face="Arial">Shift (either one)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_CONTROL</font></td>
+    <td width="56"><font face="Arial">0x11</font></td>
+    <td class="xl22" width="514"><font face="Arial">Ctrl (either one)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_MENU</font></td>
+    <td width="56"><font face="Arial">0x12</font></td>
+    <td class="xl22" width="514"><font face="Arial">Alt (either one)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_PAUSE</font></td>
+    <td width="56"><font face="Arial">0x13</font></td>
+    <td class="xl22" width="514"><font face="Arial">Pause</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_CAPITAL</font></td>
+    <td width="56"><font face="Arial">0x14</font></td>
+    <td class="xl22" width="514"><font face="Arial">Caps Lock</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_ESCAPE</font></td>
+    <td width="56"><font face="Arial">0x1B</font></td>
+    <td class="xl22" width="514"><font face="Arial">Esc</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_SPACE</font></td>
+    <td width="56"><font face="Arial">0x20</font></td>
+    <td class="xl22" width="514"><font face="Arial">Spacebar</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_PRIOR</font></td>
+    <td width="56"><font face="Arial">0x21</font></td>
+    <td class="xl22" width="514"><font face="Arial">Page Up</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_NEXT</font></td>
+    <td width="56"><font face="Arial">0x22</font></td>
+    <td class="xl22" width="514"><font face="Arial">Page Down</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_END</font></td>
+    <td width="56"><font face="Arial">0x23</font></td>
+    <td class="xl22" width="514"><font face="Arial">End</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_HOME</font></td>
+    <td width="56"><font face="Arial">0x24</font></td>
+    <td class="xl22" width="514"><font face="Arial">Home</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_LEFT</font></td>
+    <td width="56"><font face="Arial">0x25</font></td>
+    <td class="xl22" width="514"><font face="Arial">Left Arrow</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_UP</font></td>
+    <td width="56"><font face="Arial">0x26</font></td>
+    <td class="xl22" width="514"><font face="Arial">Up Arrow</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_RIGHT</font></td>
+    <td width="56"><font face="Arial">0x27</font></td>
+    <td class="xl22" width="514"><font face="Arial">Right Arrow</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_DOWN</font></td>
+    <td width="56"><font face="Arial">0x28</font></td>
+    <td class="xl22" width="514"><font face="Arial">Down Arrow</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_SELECT</font></td>
+    <td width="56"><font face="Arial">0x29</font></td>
+    <td class="xl22" width="514"><font face="Arial">Select</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_PRINT</font></td>
+    <td width="56"><font face="Arial">0x2A</font></td>
+    <td class="xl22" width="514"><font face="Arial">Print (only used by Nokia keyboards)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_EXECUTE</font></td>
+    <td width="56"><font face="Arial">0x2B</font></td>
+    <td class="xl22" width="514"><font face="Arial">Execute (not used)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_SNAPSHOT</font></td>
+    <td width="56"><font face="Arial">0x2C</font></td>
+    <td class="xl22" width="514"><font face="Arial">Print Screen</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_INSERT</font></td>
+    <td width="56"><font face="Arial">0x2D</font></td>
+    <td class="xl22" width="514"><font face="Arial">Insert</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_DELETE</font></td>
+    <td width="56"><font face="Arial">0x2E</font></td>
+    <td class="xl22" width="514"><font face="Arial">Delete</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_HELP</font></td>
+    <td width="56"><font face="Arial">0x2F</font></td>
+    <td class="xl22" width="514"><font face="Arial">Help</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_0</font></td>
+    <td width="56"><font face="Arial">0x30</font></td>
+    <td class="xl22" x:num width="514"><font face="Arial">0</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_1</font></td>
+    <td width="56"><font face="Arial">0x31</font></td>
+    <td class="xl22" x:num width="514"><font face="Arial">1</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_2</font></td>
+    <td width="56"><font face="Arial">0x32</font></td>
+    <td class="xl22" x:num width="514"><font face="Arial">2</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_3</font></td>
+    <td width="56"><font face="Arial">0x33</font></td>
+    <td class="xl22" x:num width="514"><font face="Arial">3</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_4</font></td>
+    <td width="56"><font face="Arial">0x34</font></td>
+    <td class="xl22" x:num width="514"><font face="Arial">4</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_5</font></td>
+    <td width="56"><font face="Arial">0x35</font></td>
+    <td class="xl22" x:num width="514"><font face="Arial">5</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_6</font></td>
+    <td width="56"><font face="Arial">0x36</font></td>
+    <td class="xl22" x:num width="514"><font face="Arial">6</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_7</font></td>
+    <td width="56"><font face="Arial">0x37</font></td>
+    <td class="xl22" x:num width="514"><font face="Arial">7</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_8</font></td>
+    <td width="56"><font face="Arial">0x38</font></td>
+    <td class="xl22" x:num width="514"><font face="Arial">8</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_9</font></td>
+    <td width="56"><font face="Arial">0x39</font></td>
+    <td class="xl22" x:num width="514"><font face="Arial">9</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_A</font></td>
+    <td width="56"><font face="Arial">0x41</font></td>
+    <td class="xl22" width="514"><font face="Arial">A</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_B</font></td>
+    <td width="56"><font face="Arial">0x42</font></td>
+    <td class="xl22" width="514"><font face="Arial">B</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_C</font></td>
+    <td width="56"><font face="Arial">0x43</font></td>
+    <td class="xl22" width="514"><font face="Arial">C</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_D</font></td>
+    <td width="56"><font face="Arial">0x44</font></td>
+    <td class="xl22" width="514"><font face="Arial">D</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_E</font></td>
+    <td width="56"><font face="Arial">0x45</font></td>
+    <td class="xl22" width="514"><font face="Arial">E</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F</font></td>
+    <td width="56"><font face="Arial">0x46</font></td>
+    <td class="xl22" width="514"><font face="Arial">F</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_G</font></td>
+    <td width="56"><font face="Arial">0x47</font></td>
+    <td class="xl22" width="514"><font face="Arial">G</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_H</font></td>
+    <td width="56"><font face="Arial">0x48</font></td>
+    <td class="xl22" width="514"><font face="Arial">H</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_I</font></td>
+    <td width="56"><font face="Arial">0x49</font></td>
+    <td class="xl22" width="514"><font face="Arial">I</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_J</font></td>
+    <td width="56"><font face="Arial">0x4A</font></td>
+    <td class="xl22" width="514"><font face="Arial">J</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_K</font></td>
+    <td width="56"><font face="Arial">0x4B</font></td>
+    <td class="xl22" width="514"><font face="Arial">K</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_L</font></td>
+    <td width="56"><font face="Arial">0x4C</font></td>
+    <td class="xl22" width="514"><font face="Arial">L</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_M</font></td>
+    <td width="56"><font face="Arial">0x4D</font></td>
+    <td class="xl22" width="514"><font face="Arial">M</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_N</font></td>
+    <td width="56"><font face="Arial">0x4E</font></td>
+    <td class="xl22" width="514"><font face="Arial">N</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_O</font></td>
+    <td width="56"><font face="Arial">0x4F</font></td>
+    <td class="xl22" width="514"><font face="Arial">O</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_P</font></td>
+    <td width="56"><font face="Arial">0x50</font></td>
+    <td class="xl22" width="514"><font face="Arial">P</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_Q</font></td>
+    <td width="56"><font face="Arial">0x51</font></td>
+    <td class="xl22" width="514"><font face="Arial">Q</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_R</font></td>
+    <td width="56"><font face="Arial">0x52</font></td>
+    <td class="xl22" width="514"><font face="Arial">R</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_S</font></td>
+    <td width="56"><font face="Arial">0x53</font></td>
+    <td class="xl22" width="514"><font face="Arial">S</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_T</font></td>
+    <td width="56"><font face="Arial">0x54</font></td>
+    <td class="xl22" width="514"><font face="Arial">T</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_U</font></td>
+    <td width="56"><font face="Arial">0x55</font></td>
+    <td class="xl22" width="514"><font face="Arial">U</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_V</font></td>
+    <td width="56"><font face="Arial">0x56</font></td>
+    <td class="xl22" width="514"><font face="Arial">V</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_W</font></td>
+    <td width="56"><font face="Arial">0x57</font></td>
+    <td class="xl22" width="514"><font face="Arial">W</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_X</font></td>
+    <td width="56"><font face="Arial">0x58</font></td>
+    <td class="xl22" width="514"><font face="Arial">X</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_Y</font></td>
+    <td width="56"><font face="Arial">0x59</font></td>
+    <td class="xl22" width="514"><font face="Arial">Y</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_Z</font></td>
+    <td width="56"><font face="Arial">0x5A</font></td>
+    <td class="xl22" width="514"><font face="Arial">Z</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_STARTKEY</font></td>
+    <td width="56"><font face="Arial">0x5B</font></td>
+    <td class="xl22" width="514"><font face="Arial">Start Menu key</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_CONTEXTKEY</font></td>
+    <td width="56"><font face="Arial">0x5D</font></td>
+    <td class="xl22" width="514"><font face="Arial">Context Menu key</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_NUMPAD0</font></td>
+    <td width="56"><font face="Arial">0x60</font></td>
+    <td class="xl22" width="514"><font face="Arial">0 (keypad with Num Lock)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_NUMPAD1</font></td>
+    <td width="56"><font face="Arial">0x61</font></td>
+    <td class="xl22" width="514"><font face="Arial">1 (keypad with Num Lock)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_NUMPAD2</font></td>
+    <td width="56"><font face="Arial">0x62</font></td>
+    <td class="xl22" width="514"><font face="Arial">2 (keypad with Num Lock)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_NUMPAD3</font></td>
+    <td width="56"><font face="Arial">0x63</font></td>
+    <td class="xl22" width="514"><font face="Arial">3 (keypad with Num Lock)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_NUMPAD4</font></td>
+    <td width="56"><font face="Arial">0x64</font></td>
+    <td class="xl22" width="514"><font face="Arial">4 (keypad with Num Lock)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_NUMPAD5</font></td>
+    <td width="56"><font face="Arial">0x65</font></td>
+    <td class="xl22" width="514"><font face="Arial">5 (keypad with Num Lock)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_NUMPAD6</font></td>
+    <td width="56"><font face="Arial">0x66</font></td>
+    <td class="xl22" width="514"><font face="Arial">6 (keypad with Num Lock)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_NUMPAD7</font></td>
+    <td width="56"><font face="Arial">0x67</font></td>
+    <td class="xl22" width="514"><font face="Arial">7 (keypad with Num Lock)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_NUMPAD8</font></td>
+    <td width="56"><font face="Arial">0x68</font></td>
+    <td class="xl22" width="514"><font face="Arial">8 (keypad with Num Lock)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_NUMPAD9</font></td>
+    <td width="56"><font face="Arial">0x69</font></td>
+    <td class="xl22" width="514"><font face="Arial">9 (keypad with Num Lock)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_MULTIPLY</font></td>
+    <td width="56"><font face="Arial">0x6A</font></td>
+    <td class="xl22" width="514"><font face="Arial">* (keypad)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_ADD</font></td>
+    <td width="56"><font face="Arial">0x6B</font></td>
+    <td class="xl22" width="514"><font face="Arial">+ (keypad)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_SEPARATOR</font></td>
+    <td width="56"><font face="Arial">0x6C</font></td>
+    <td class="xl22" width="514"><font face="Arial">Separator (never generated by the keyboard)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_SUBTRACT</font></td>
+    <td width="56"><font face="Arial">0x6D</font></td>
+    <td class="xl22" x:str="'- (keypad)" width="514"><font face="Arial">- (keypad)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_DECIMAL</font></td>
+    <td width="56"><font face="Arial">0x6E</font></td>
+    <td class="xl22" width="514"><font face="Arial">. (keypad with Num Lock)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_DIVIDE</font></td>
+    <td width="56"><font face="Arial">0x6F</font></td>
+    <td class="xl22" width="514"><font face="Arial">/ (keypad)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F1</font></td>
+    <td width="56"><font face="Arial">0x70</font></td>
+    <td class="xl22" width="514"><font face="Arial">F1</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F2</font></td>
+    <td width="56"><font face="Arial">0x71</font></td>
+    <td class="xl22" width="514"><font face="Arial">F2</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F3</font></td>
+    <td width="56"><font face="Arial">0x72</font></td>
+    <td class="xl22" width="514"><font face="Arial">F3</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F4</font></td>
+    <td width="56"><font face="Arial">0x73</font></td>
+    <td class="xl22" width="514"><font face="Arial">F4</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F5</font></td>
+    <td width="56"><font face="Arial">0x74</font></td>
+    <td class="xl22" width="514"><font face="Arial">F5</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F6</font></td>
+    <td width="56"><font face="Arial">0x75</font></td>
+    <td class="xl22" width="514"><font face="Arial">F6</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F7</font></td>
+    <td width="56"><font face="Arial">0x76</font></td>
+    <td class="xl22" width="514"><font face="Arial">F7</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F8</font></td>
+    <td width="56"><font face="Arial">0x77</font></td>
+    <td class="xl22" width="514"><font face="Arial">F8</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F9</font></td>
+    <td width="56"><font face="Arial">0x78</font></td>
+    <td class="xl22" width="514"><font face="Arial">F9</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F10</font></td>
+    <td width="56"><font face="Arial">0x79</font></td>
+    <td class="xl22" width="514"><font face="Arial">F10</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F11</font></td>
+    <td width="56"><font face="Arial">0x7A</font></td>
+    <td class="xl22" width="514"><font face="Arial">F11</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F12</font></td>
+    <td width="56"><font face="Arial">0x7B</font></td>
+    <td class="xl22" width="514"><font face="Arial">F12</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F13</font></td>
+    <td width="56"><font face="Arial">0x7C</font></td>
+    <td class="xl22" width="514"><font face="Arial">F13</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F14</font></td>
+    <td width="56"><font face="Arial">0x7D</font></td>
+    <td class="xl22" width="514"><font face="Arial">F14</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F15</font></td>
+    <td width="56"><font face="Arial">0x7E</font></td>
+    <td class="xl22" width="514"><font face="Arial">F15</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F16</font></td>
+    <td width="56"><font face="Arial">0x7F</font></td>
+    <td class="xl22" width="514"><font face="Arial">F16</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F17</font></td>
+    <td width="56"><font face="Arial">0x80</font></td>
+    <td class="xl22" width="514"><font face="Arial">F17</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F18</font></td>
+    <td width="56"><font face="Arial">0x81</font></td>
+    <td class="xl22" width="514"><font face="Arial">F18</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F19</font></td>
+    <td width="56"><font face="Arial">0x82</font></td>
+    <td class="xl22" width="514"><font face="Arial">F19</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F20</font></td>
+    <td width="56"><font face="Arial">0x83</font></td>
+    <td class="xl22" width="514"><font face="Arial">F20</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F21</font></td>
+    <td width="56"><font face="Arial">0x84</font></td>
+    <td class="xl22" width="514"><font face="Arial">F21</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F22</font></td>
+    <td width="56"><font face="Arial">0x85</font></td>
+    <td class="xl22" width="514"><font face="Arial">F22</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F23</font></td>
+    <td width="56"><font face="Arial">0x86</font></td>
+    <td class="xl22" width="514"><font face="Arial">F23</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_F24</font></td>
+    <td width="56"><font face="Arial">0x87</font></td>
+    <td class="xl22" width="514"><font face="Arial">F24</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_NUMLOCK</font></td>
+    <td width="56"><font face="Arial">0x90</font></td>
+    <td class="xl22" width="514"><font face="Arial">Num Lock</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_SCROLL</font></td>
+    <td width="56"><font face="Arial">0x91</font></td>
+    <td class="xl22" width="514"><font face="Arial">Scroll Lock</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_1</font></td>
+    <td width="56"><font face="Arial">0xBA</font></td>
+    <td class="xl22" width="514"><font face="Arial">;</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_PLUS</font></td>
+    <td width="56"><font face="Arial">0xBB</font></td>
+    <td class="xl22" width="514"><font face="Arial">=</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_COMMA</font></td>
+    <td width="56"><font face="Arial">0xBC</font></td>
+    <td class="xl22" width="514"><font face="Arial">,</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_MINUS</font></td>
+    <td width="56"><font face="Arial">0xBD</font></td>
+    <td class="xl22" width="514"><font face="Arial">-</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_PERIOD</font></td>
+    <td width="56"><font face="Arial">0xBE</font></td>
+    <td class="xl22" width="514"><font face="Arial">.</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_2</font></td>
+    <td width="56"><font face="Arial">0xBF</font></td>
+    <td class="xl22" width="514"><font face="Arial">/</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_3</font></td>
+    <td width="56"><font face="Arial">0xC0</font></td>
+    <td class="xl22" width="514"><font face="Arial">`</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_4</font></td>
+    <td width="56"><font face="Arial">0xDB</font></td>
+    <td class="xl22" width="514"><font face="Arial">[</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_5</font></td>
+    <td width="56"><font face="Arial">0xDC</font></td>
+    <td class="xl22" width="514"><font face="Arial">\</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_6</font></td>
+    <td width="56"><font face="Arial">0xDD</font></td>
+    <td class="xl22" width="514"><font face="Arial">]</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_7</font></td>
+    <td width="56"><font face="Arial">0xDE</font></td>
+    <td class="xl22" width="514"><font face="Arial">'</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_8</font></td>
+    <td width="56"><font face="Arial">0xDF</font></td>
+    <td class="xl22" width="514"><font face="Arial">(unknown)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_ICO_F17</font></td>
+    <td width="56"><font face="Arial">0xE0</font></td>
+    <td class="xl22" width="514"><font face="Arial">F17 on Olivetti extended keyboard (internal use only)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_ICO_F18</font></td>
+    <td width="56"><font face="Arial">0xE1</font></td>
+    <td class="xl22" width="514"><font face="Arial">F18 on Olivetti extended keyboard (internal use only)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_102</font></td>
+    <td width="56"><font face="Arial">0xE2</font></td>
+    <td class="xl22" width="514"><font face="Arial">&lt; or | on IBM-compatible 102 enhanced non-U.S. keyboard</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_ICO_HELP</font></td>
+    <td width="56"><font face="Arial">0xE3</font></td>
+    <td class="xl22" width="514"><font face="Arial">Help on Olivetti extended keyboard (internal use only)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_ICO_00</font></td>
+    <td width="56"><font face="Arial">0xE4</font></td>
+    <td class="xl22" width="514"><font face="Arial">00 on Olivetti extended keyboard (internal use only)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_ICO_CLEAR</font></td>
+    <td width="56"><font face="Arial">0xE6</font></td>
+    <td class="xl22" width="514"><font face="Arial">Clear on Olivette extended keyboard (internal use only)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_RESET</font></td>
+    <td width="56"><font face="Arial">0xE9</font></td>
+    <td class="xl22" width="514"><font face="Arial">Reset (Nokia keyboards only)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_JUMP</font></td>
+    <td width="56"><font face="Arial">0xEA</font></td>
+    <td class="xl22" width="514"><font face="Arial">Jump (Nokia keyboards only)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_PA1</font></td>
+    <td width="56"><font face="Arial">0xEB</font></td>
+    <td class="xl22" width="514"><font face="Arial">PA1 (Nokia keyboards only)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_PA2</font></td>
+    <td width="56"><font face="Arial">0xEC</font></td>
+    <td class="xl22" width="514"><font face="Arial">PA2 (Nokia keyboards only)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_PA3</font></td>
+    <td width="56"><font face="Arial">0xED</font></td>
+    <td class="xl22" width="514"><font face="Arial">PA3 (Nokia keyboards only)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_WSCTRL</font></td>
+    <td width="56"><font face="Arial">0xEE</font></td>
+    <td class="xl22" width="514"><font face="Arial">WSCTRL (Nokia keyboards only)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_CUSEL</font></td>
+    <td width="56"><font face="Arial">0xEF</font></td>
+    <td class="xl22" width="514"><font face="Arial">CUSEL (Nokia keyboards only)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_ATTN</font></td>
+    <td width="56"><font face="Arial">0xF0</font></td>
+    <td class="xl22" width="514"><font face="Arial">ATTN (Nokia keyboards only)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_FINNISH</font></td>
+    <td width="56"><font face="Arial">0xF1</font></td>
+    <td class="xl22" width="514"><font face="Arial">FINNISH (Nokia keyboards only)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_COPY</font></td>
+    <td width="56"><font face="Arial">0xF2</font></td>
+    <td class="xl22" width="514"><font face="Arial">COPY (Nokia keyboards only)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_AUTO</font></td>
+    <td width="56"><font face="Arial">0xF3</font></td>
+    <td class="xl22" width="514"><font face="Arial">AUTO (Nokia keyboards only)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_ENLW</font></td>
+    <td width="56"><font face="Arial">0xF4</font></td>
+    <td class="xl22" width="514"><font face="Arial">ENLW (Nokia keyboards only)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_BACKTAB</font></td>
+    <td width="56"><font face="Arial">0xF5</font></td>
+    <td class="xl22" width="514"><font face="Arial">BACKTAB (Nokia keyboards only)</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_ATTN</font></td>
+    <td width="56"><font face="Arial">0xF6</font></td>
+    <td class="xl22" width="514"><font face="Arial">ATTN</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_CRSEL</font></td>
+    <td width="56"><font face="Arial">0xF7</font></td>
+    <td class="xl22" width="514"><font face="Arial">CRSEL</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_EXSEL</font></td>
+    <td width="56"><font face="Arial">0xF8</font></td>
+    <td class="xl22" width="514"><font face="Arial">EXSEL</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_EREOF</font></td>
+    <td width="56"><font face="Arial">0xF9</font></td>
+    <td class="xl22" width="514"><font face="Arial">EREOF</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_PLAY</font></td>
+    <td width="56"><font face="Arial">0xFA</font></td>
+    <td class="xl22" width="514"><font face="Arial">PLAY</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_ZOOM</font></td>
+    <td width="56"><font face="Arial">0xFB</font></td>
+    <td class="xl22" width="514"><font face="Arial">ZOOM</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_NONAME</font></td>
+    <td width="56"><font face="Arial">0xFC</font></td>
+    <td class="xl22" width="514"><font face="Arial">NONAME</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_PA1</font></td>
+    <td width="56"><font face="Arial">0xFD</font></td>
+    <td class="xl22" width="514"><font face="Arial">PA1</font></td>
+  </tr>
+  <tr height="17" style="height:12.75pt">
+    <td height="17" style="height: 12.75pt" width="152"><font face="Arial">VK_OEM_CLEAR</font></td>
+    <td width="56"><font face="Arial">0xFE</font></td>
+    <td class="xl22" width="514"><font face="Arial">CLEAR</font></td>
+  </tr>
+</table>
+
+</body>
+
+</html>
