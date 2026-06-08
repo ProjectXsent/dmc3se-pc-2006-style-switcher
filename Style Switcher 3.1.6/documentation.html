@@ -146,14 +146,47 @@ Keyboard users can skip the following steps and continue to the <a href="#Config
 <li>Download, extract and run <a href="https://sites.google.com/site/0dd14lab/xinput-plus">XInput Plus</a> as Administrator.</li>
 <li>Click on Select.</li>
 <li>Navigate to your Devil May Cry 3 root directory, highlight <b>dmc3se.exe</b> by clicking on it and click on Open.</li>
-<li>Click on <b>DirectInput</b> tab.</li>
-<li>Tick the check box labelled <b>Enable DirectInput Output</b>.</li>
-<li>Click on the drop-down button right next to <b>LT/RT</b> and select <b>Button 11/12</b> from the drop-down list.</li>
-<li>Below that, click on the drop-down button right next to <b>GUIDE</b> and select <b>Button 13</b>.</li>
-<li>Click <b>Customize</b> (this bug is fixed in XInput Plus v4.15+).</li>
-<li>On the Left Stick-X, click X_Axis and select <b>Y_Axis</b> from the dropdown list.</li>
-<li>On the Left Stick-Y, click Y_Axis and select <b>X_Axis</b> from the dropdown list..</li>
-<li>Click on OK.</li>
+<li>Click on DirectInput.</li>
+<li>Tick the check box labelled 'Enable DirectInput Output'.</li>
+<li>Click 'Customize' and set the following:
+</br>
+<table class="listing2">
+<tr>
+<th>XInput</th>
+<th>DirectInput</th>
+</tr>
+<tr>
+<td>Left Stick-X</td>
+<td>Y_Axis</td>
+</tr>
+<tr>
+<td>Left Stick-Y</td>
+<td>X_Axis</td>
+</tr>
+<td>Left Trigger</td>
+<td>Button7</td>
+</tr>
+<td>Right Trigger</td>
+<td>Button8</td>
+</tr>
+<td>BACK</td>
+<td>Button9</td>
+</tr>
+<td>START</td>
+<td>Button10</td>
+</tr>
+<td>LS Button</td>
+<td>Button11</td>
+</tr>
+<td>RS Button</td>
+<td>Button12</td>
+</tr>
+<td>Guide</td>
+<td>Button13</td>
+</tr>
+</table>
+</br>
+</li>
 <li>Click on Apply.</li>
 <li>OK.</li>
 <li>OK.</li>
@@ -162,36 +195,35 @@ Keyboard users can skip the following steps and continue to the <a href="#Config
 </br>
 <div class="code">
 [Controller (XBOX 360 For Windows)]</br>
-START = 7</br>
-SELECT = 6</br>
+START = 9</br>
+SELECT = 8</br>
 CIRCLE = 1</br>
 TRIANGLE = 3</br>
 SQUARE = 2</br>
 CROSS = 0</br>
 L1 = 4</br>
 R1 = 5</br>
-L2 = 10</br>
-R2 = 11</br>
-L3 = 8</br>
-R3 = 9</br>
+L2 = 6</br>
+R2 = 7</br>
+L3 = 10</br>
+R3 = 11</br>
 L<->R = 1</br>
 </br>
 [Controller (XBOX One For Windows)]</br>
-START = 7</br>
-SELECT = 6</br>
+START = 9</br>
+SELECT = 8</br>
 CIRCLE = 1</br>
 TRIANGLE = 3</br>
 SQUARE = 2</br>
 CROSS = 0</br>
 L1 = 4</br>
 R1 = 5</br>
-L2 = 10</br>
-R2 = 11</br>
-L3 = 8</br>
-R3 = 9</br>
+L2 = 6</br>
+R2 = 7</br>
+L3 = 10</br>
+R3 = 11</br>
 L<->R = 1</br>
 </div>
-</br>
 </br>
 This template should work for most XInput devices. The string within the brackets is the name of the device. It has to match your device's name or the template will not be applied.</br>
 If the Right Analog makes the character move instead of Left Analog, change the value of L<->R to 0.</br>
