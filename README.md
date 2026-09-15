@@ -54,7 +54,13 @@ This doesn't require adding the XInput controller config via `GPadCfg.exe`. Only
 - Delete `dmcese.ini`.
 - Extract all files to DMC3SE game folder.
 
+This uses Xidi SDL2 Plugin and SDL2 Compat so SDL3 compatibility is possible.
+No need to use `GPadCfg.exe` since the config will use the same layouts of other SDL2/3 controllers.
+
 # See also:
 - [Style Switcher Mod Original Link](https://www.nexusmods.com/devilmaycry3/mods/1)
 - [DMC3 Inputs Thing](https://github.com/muhopensores/dmc3-inputs-thing)
 - [Devil May Cry 3 Special Edition - PCGamingWiki](https://www.pcgamingwiki.com/wiki/Devil_May_Cry_3:_Special_Edition)
+- [Xidi](https://github.com/samuelgr/Xidi)
+- [Xidi SDL2 Plugin](https://github.com/ProjectXsent/Xidi-SDL2-Plugin)
+- [SDL2 Compat](https://github.com/libsdl-org/sdl2-compat)
