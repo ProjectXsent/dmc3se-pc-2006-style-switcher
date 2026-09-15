@@ -9,26 +9,50 @@ Archive of Serpentiem's Style Switcher mod for DMC3SE 2006 PC port.
 - Install the required files and restart your PC.
 - Download and extract the Style Switcher mod to the DMC3SE game folder and follow the readme txt files.
 
-# Controller Configuration
+# Controller Configuration (not needed for Xidi)
 All configurations will be saved in the `dmc3se.ini` file.
 - Run `GPadCfg.exe` then assign the keys and double-click the `Save` icon. If the analogs are swapped in-game, open `GPadCfg.exe` again then click the `Reverse` icon and Save.
 
-# Video tutorial for Generic Controllers
-- https://www.youtube.com/watch?v=mmBH1-KXRXI
-
-# XInput/Xbox Controller Fix:
+# XInput Plus (manual method):
 You can do this procedure with or without the Style Switcher mod.
 - Download [XInput Plus](https://0dd14lab.net/bin/xinputplus/) and extract the files into a folder.
-- Run XInput Plus, click Select on `Target Program` and select `dmc3se.exe`.
+- Run XInput Plus as Administrator and set `Target Program` as `dmc3se.exe`.
 - Go to the `DirectInput` tab and tick the `Enable DirectInput Output`.
-- Click the drop-down button beside `LT/RT` and select `Button 11/12`.
-- Click the drop-down button beside `GUIDE` and select `Button 13`.
-- Click `Customize` then the drop-down button beside `Left Stick-X` and select `Y_Axis`.
-- Do this the same for `Left Stick-Y` and select `X_Axis`.
-OPTIONAL: Click `Setting` tab then go to `Others` tab and disable the `Enable Init Beep`.
+- Click `Customize` then set the following:
+  
+  | XInput           | DirectInput       |
+  |------------------|-------------------|
+  | Left-Stick X     | X_Rot             |
+  | Left-Stick Y     | Z_Axis            |
+  | Right-Stick X    | Y_Axis            |
+  | Right-Stick Y    | X_Axis            |
+  | Left Trigger     | Button7           |
+  | Right Trigger    | Button8           |
+  | A                | Button3           |
+  | B                | Button4           |
+  | X                | Button1           |
+  | Y                | Button2           |
+  | LB               | Button5           |
+  | RB               | Button6           |
+  | BACK             | Button11          |
+  | START            | Button12          |
+  | LS Button        | Button8           |
+  | RB Button        | Button9           |
+  | Guide            | Button13          |
+
+- Click `Setting` tab then go to `Others` tab and disable the `Enable Init Beep`.
 - Click on Apply button, confirm everything and close XInput Plus. New files will appear in the game folder.
-- Launch `GPadCfg.exe`, assign the corresponding buttons, click the `Reverse` icon and double-click the `Save` icon.
 - Run the game to test the controls.
+
+This doesn't require adding the XInput controller config via `GPadCfg.exe`. Only works for XInput/Xbox controllers.
+
+# XInput Plus (extract method):
+- Delete `dmcese.ini` or any traces of XInput configs in the file. (This file is still needed for DirectInput controllers)
+- Extract all files to DMC3SE game folder.
+
+# Xidi
+- Delete `dmcese.ini`.
+- Extract all files to DMC3SE game folder.
 
 # See also:
 - [Style Switcher Mod Original Link](https://www.nexusmods.com/devilmaycry3/mods/1)
