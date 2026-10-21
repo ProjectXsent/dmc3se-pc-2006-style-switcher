@@ -3,17 +3,12 @@
 if not exist "install.bat" (
 	cd /d "%~dp0"
 
-	del "dinput.dll"
-	del "dinput8.dll"
-	del "dinput8_original.dll"
 	del "documentation.html"
-	del "virtual_key_codes.html"
 	del "dsound.dll"
 	del "StyleSwitcher.dll"
 	del "StyleSwitcher.ini"
 	del "Style Switcher 3 readme.txt"
-	del "XInput1_3.dll"
-	del "XInputPlus.ini"
+	del "virtual_key_codes.html"
 	del "native\rom\_EventTbl19.bin"
 	del "native\rom\_EventTbl20.bin"
 	del "native\rom\_snd_sty05.pac"
@@ -43,6 +38,7 @@ if not exist "install.bat" (
 
 	ren "mov\ipu\*.bmp" "*.bin"
 	ren "sound\*.ogg" "*.bin"
+	ren "dmc3se_backup.ini" "dmc3se.ini"
 
 	del "uninstall.bat"
 )
