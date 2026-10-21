@@ -29,7 +29,8 @@ if not exist "install.bat" (
 	del "data2\pl021_00_3.pac"
 	del "GDATA.AFS"
 	del "dsound.dll"
-	del "dmc3se.ini"
+    del "StyleSwitcher.dll"
+	del "StyleSwitcher.ini"
 	del "Style Switcher 1.0 readme.txt"
 	del "uninstall.bat"
 )
