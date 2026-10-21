@@ -5,6 +5,7 @@ if not exist "install.bat" (
 
 	del "GDATA.AFS"
 	del "dsound.dll"
+	del "StyleSwitcher.dll"
 	del "StyleSwitcher.ini"
 	del "Style Switcher 2.4.3 readme.txt"
 	del "uninstall.bat"
